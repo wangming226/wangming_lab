@@ -1,0 +1,12 @@
+{
+  "name": "wangming-lab-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "王明课题组 — 吉林大学超分子化学实验室静态网站",
+  "scripts": {
+    "gallery": "node scripts/generate-gallery.mjs",
+    "papers": "node scripts/rebuild-all.mjs",
+    "build": "node scripts/generate-gallery.mjs && node scripts/rebuild-all.mjs"
+  },
+  "license": "UNLICENSED"
+}

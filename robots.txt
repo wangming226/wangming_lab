@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wangming-lab.github.io/sitemap.xml

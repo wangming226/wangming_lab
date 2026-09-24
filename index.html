@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a3a5c'/><text x='50' y='68' font-size='52' font-weight='700' fill='white' text-anchor='middle' font-family='serif'>WM</text></svg>" />
+  <meta property="og:title" content="王明课题组 | 吉林大学 · 超分子化学" />
+  <meta property="og:description" content="王明课题组 — 吉林大学超分子化学实验室。聚焦金属有机笼精准构筑、叠层超分子组装及功能应用研究。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wangming-lab.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+    <title>王明课题组 | 吉林大学 · 超分子化学</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "王明课题组",
+      "alternateName": "Wang Ming Laboratory",
+      "description": "吉林大学超分子化学实验室，聚焦金属有机笼精准构筑、叠层超分子组装及功能应用研究。",
+      "parentOrganization": { "@type": "CollegeOrUniversity", "name": "吉林大学化学学院" },
+      "address": { "@type": "PostalAddress", "streetAddress": "前进大街2699号", "addressLocality": "长春", "addressRegion": "吉林", "addressCountry": "CN" },
+      "url": "https://wangming-lab.github.io",
+      "email": "wangming_lab@jlu.edu.cn"
+    }
+    </script>
+    <meta name="description" content="王明课题组 — 吉林大学超分子化学实验室。聚焦金属有机笼精准构筑、叠层超分子组装及功能应用研究。" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-to-content" href="#main-content">跳到主要内容</a>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="header-row">
+          <a href="./index.html" class="header-logo">
+            <span class="brand-badge">WM</span>
+            <div class="header-brand-text">
+              <strong data-i18n="nav.brand">王明课题组</strong>
+              <small data-i18n="nav.badge">吉林大学 · 超分子化学</small>
+            </div>
+          </a>
+          <button type="button" class="navbar-toggle" id="navbarToggle" aria-label="切换导航菜单">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <ul class="header-nav" id="headerNav">
+            <li><a href="./index.html" class="nav-active" data-i18n="nav.home">首页</a></li>
+            <li><a href="./index.html#research" data-i18n="nav.research">研究方向</a></li>
+            <li><a href="./publications.html" data-i18n="nav.papers">研究成果</a></li>
+            <li><a href="./members.html" data-i18n="nav.members">团队成员</a></li>
+            <li><a href="./news.html" data-i18n="nav.news">新闻动态</a></li>
+            <li><a href="./gallery.html" data-i18n="nav.gallery">课题组活动</a></li>
+            <li><a href="./contact.html" data-i18n="nav.contact">联系我们</a></li>
+          </ul>
+          <div style="display:flex;align-items:center;gap:6px;margin-left:16px;">
+            <div class="lang-switch">
+              <button class="lang-btn active" data-lang-btn="zh" type="button">中</button>
+              <button class="lang-btn" data-lang-btn="en" type="button">EN</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== BANNER SLIDER ===== -->
+    <div class="banner-home">
+      <div class="banner-slider" id="homeBanner">
+        <div class="banner-slide active">
+          <img src="./assets/banners/4235010d4f17bc423a3615f137a20e2f.jpg" alt="王明课题组合影" />
+        </div>
+      </div>
+      <div class="banner-dots" id="bannerDots"></div>
+    </div>
+
+    <!-- ===== INDEX CONTENT ===== -->
+    <div class="index-content" id="main-content">
+      <div class="container">
+        <!-- Row 1: Progress (left 2/3) + News (right 1/3) -->
+        <div class="index-grid">
+          <div class="news-box">
+            <h3 class="index-title" data-i18n="home.progress">研究进展</h3>
+            <div class="progress-carousel" id="progressCarousel">
+              <div class="pc-frame"><div class="pc-slides" id="progressSlides"></div></div>
+              <div class="pc-dots" id="progressDots"></div>
+            </div>
+          </div>
+
+          <div class="scientific-box">
+            <h3 class="index-title" data-i18n="home.news">新闻动态 <a href="./news.html" class="index-more" data-i18n="home.more">查看更多</a></h3>
+            <ul id="homeNewsList"></ul>
+          </div>
+        </div>
+
+        <!-- Row 2: Research areas -->
+        <div class="index-research-row" id="research">
+          <h3 class="index-title" data-i18n="home.research">研究方向</h3>
+          <div class="index-research-areas">
+            <ul id="researchAreasList"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <div class="index-content2">
+      <div class="container">
+        <div class="Partners-box">
+          <h3 class="index-title" data-i18n="home.gallery" style="justify-content:center;">实验室相册 <a href="./gallery.html" class="index-more" data-i18n="home.more">查看更多</a></h3>
+          <div class="Partners_text">
+            <h3 class="Partners_left">"</h3>
+            <p data-i18n="home.quote">课题组是一个温暖的大家庭，记录着每个人的汗水与努力，也充满着我们的快乐与欢笑。</p>
+            <h3 class="Partners_right">"</h3>
+          </div>
+          <div class="gallery-swiper-wrap">
+            <div class="gallery-carousel" id="galleryCarousel">
+              <button class="gc-arrow gc-prev" type="button">&lsaquo;</button>
+              <div class="gc-frame"><div class="gc-slides" id="gallerySlides"></div></div>
+              <button class="gc-arrow gc-next" type="button">&rsaquo;</button>
+            </div>
+            <div class="gc-dots" id="galleryDots"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-links">
+          <h3 data-i18n="footer.links">友情链接</h3>
+          <ul>
+            <li><a href="https://www.jlu.edu.cn/" target="_blank" rel="noopener noreferrer">吉林大学</a></li>
+            <li><a href="http://chem.jlu.edu.cn/" target="_blank" rel="noopener noreferrer">吉林大学化学学院</a></li>
+            <li><a href="https://pubs.acs.org/" target="_blank" rel="noopener noreferrer">ACS Publications</a></li>
+            <li><a href="https://pubs.rsc.org/" target="_blank" rel="noopener noreferrer">RSC Publishing</a></li>
+            <li><a href="https://onlinelibrary.wiley.com/" target="_blank" rel="noopener noreferrer">Wiley Online Library</a></li>
+            <li><a href="https://www.sciencedirect.com/" target="_blank" rel="noopener noreferrer">Elsevier Science Direct</a></li>
+            <li><a href="https://www.nature.com/" target="_blank" rel="noopener noreferrer">Nature</a></li>
+            <li><a href="https://www.science.org/" target="_blank" rel="noopener noreferrer">Science</a></li>
+            <li><a href="https://www.pnas.org/" target="_blank" rel="noopener noreferrer">PNAS</a></li>
+          </ul>
+        </div>
+        <div class="footer-record">
+          <p>&copy; <span id="year"></span> 王明课题组 · Wang Ming Laboratory</p>
+          <p>吉林大学化学学院 · College of Chemistry, Jilin University</p>
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" type="button">↑</button>
+
+    <script src="./js/data/site-data.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/pages/home.js"></script>
+  </body>
+</html>
